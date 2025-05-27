@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: https://github.com/ITLab-CC/plane-middleware-discord.git
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
